@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hand'Coulisses</title>
+  <title>Hand'Coulisses — Les coulisses du CCMHB</title>
+  <meta name="description" content="Plongez dans les coulisses du centre de formation du C'Chartres MHB. Portraits, éclairages et interviews des jeunes handballeurs en route vers le professionnalisme.">
+
+  <meta property="og:title" content="Hand'Coulisses">
+  <meta property="og:description" content="Plongez dans les coulisses du centre de formation du C'Chartres MHB.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://handcoulisses.fr">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +17,8 @@
 
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- DataLayer -->
   <script src="assets/js/datalayer.js"></script>
 
-  <!-- Google Tag Manager -->
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -25,7 +29,6 @@
 </head>
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
     height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -39,9 +42,9 @@
       </a>
       <nav class="nav-links">
         <a href="index.html" class="nav-link active">Accueil</a>
-        <a href="#" class="nav-link">Portraits</a>
-        <a href="#" class="nav-link">Éclairages</a>
-        <a href="#" class="nav-link">Interviews</a>
+        <a href="portraits.html" class="nav-link">Portraits</a>
+        <a href="eclairages.html" class="nav-link">Éclairages</a>
+        <a href="interviews.html" class="nav-link">Interviews</a>
         <a href="contact.html" class="nav-cta">Contact</a>
       </nav>
       <button class="burger" id="burger" aria-label="Menu">
@@ -49,6 +52,16 @@
       </button>
     </div>
   </header>
+
+  <!-- ── NAV OVERLAY (mobile) ── -->
+  <div class="nav-overlay" id="navOverlay">
+    <button class="nav-overlay-close" id="navOverlayClose">&times;</button>
+    <a href="index.html" class="nav-link active">Accueil</a>
+    <a href="portraits.html" class="nav-link">Portraits</a>
+    <a href="eclairages.html" class="nav-link">Éclairages</a>
+    <a href="interviews.html" class="nav-link">Interviews</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
 
   <!-- ── HERO ── -->
   <section class="hero">
@@ -65,22 +78,17 @@
       </a>
     </div>
   </section>
-  <!-- ── Encadré présentation Blog ── -->
-      <div class="article-factbox reveal" style="background: var(--primary-dk); color: var(--accent); padding: 30px 25px; border-radius: var(--radius-lg);
-  margin: 40px 60px 0px 60px; border-left: 3px solid var(--accent); justify-content: safe center;">
-        <div class="factbox-title" style="font-size : 14px; color: var(--accent)">Bienvenue sur mon blog</div>
-        <p>Depuis petit, le handball fait partie de leur vie. Ils mangent, dorment, pensent et respirent le handball. 
-        Devenir professionnel ne relève pas simplement du rêve ou d’une pensée dans un coin de leur esprit : c’est ce pour quoi ils se lèvent le matin.
-      </p>
-      <br>
-      <p>Ils ont 17, 18 ou 20 ans. Ils viennent de Chartres, Lanester ou Montpellier. Ils sont gardiens, arrières gauches ou pivots 
-        et ils n’ont qu’un seul objectif : signer un contrat professionnel.
-      </p> 
-      <br>
-      <p>Mais entre doutes, cursus scolaires, peur de l’échec et autres convocation avec le groupe professionnel, quel est leur quotidien 
-        et surtout qui sont-ils ? Qui sont ces jeunes joueurs prêts à tout pour passer du rêve à la réalité ?
-      </p>
-      </div>
+
+  <!-- ── Note éditoriale ── -->
+  <div class="blog-presentation reveal">
+    <div class="blog-presentation-inner">
+      <div class="blog-presentation-label">Note de l'éditeur</div>
+      <p class="blog-presentation-lead">Depuis petit, le handball fait partie de leur vie. Ils mangent, dorment, pensent et respirent le handball.</p>
+      <p>Ils ont 17, 18 ou 20 ans. Ils viennent de Chartres, Lanester ou Montpellier. Ils sont gardiens, arrières gauches ou pivots, et ils n'ont qu'un seul objectif : signer un contrat professionnel.</p>
+      <p>Mais entre doutes, cursus scolaires, peur de l'échec et convocations avec le groupe pro, quel est leur quotidien ? Qui sont ces jeunes joueurs prêts à tout pour passer du rêve à la réalité ?</p>
+      <div class="blog-presentation-signature"><strong>Théo Alleaume</strong> — Hand'Coulisses</div>
+    </div>
+  </div>
 
   <!-- ── À LA UNE ── -->
   <section class="section-une" id="articles">
@@ -97,25 +105,25 @@
             <div class="img-icon">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M16 24 L24 16 L32 24 L24 32 Z" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg>
             </div>
-            <span><img src="assets/images/Sacha-Durasnel-EDF.jpeg" alt="Sacha Durasnel"></span>
+            <span><img src="assets/images/KenanLeBris-CCMHB.avif" alt="Kenan Le Bris"></span>
           </div>
           <div class="une-main-overlay"></div>
         </div>
         <div class="une-main-content">
           <div class="article-meta">
             <span class="tag tag--portrait">Portrait</span>
-            <span class="meta-date">02 avril 2026</span>
+            <span class="meta-date">16 juin 2026</span>
           </div>
           <h2 class="une-main-title">
-            <a href="sacha-durasnel-equipe-france.html">« Ça fout les frissons » : les premiers pas en Bleu de Sacha Durasnel</a>
+            <a href="kenan-le-bris-portrait.html">Le handball n'est pas une fin en soi</a>
           </h2>
           <p class="une-main-excerpt">
-            Jeudi 19 mars 2026, Sacha Durasnel a honoré sa première sélection en Equipe de France U21 et son entrée dans la grande famille tricolore, 
-            lors du Tiby 2026, tournoi de handball entre quatre nations de jeunes joueurs prometteurs.
+            Après deux ans au sein du centre de formation du CCMHB, Kenan Le Bris, arrière droit, 
+            va quitter le club. Freiné par de nombreuses blessures et un faible temps de jeu, le Breton change de cap.
           </p>
           <div class="une-main-footer">
             <span class="author">Par <strong>Théo Alleaume</strong></span>
-            <a href="sacha-durasnel-equipe-france.html" class="read-more-btn">
+            <a href="kenan-le-bris-portrait.html" class="read-more-btn">
               Lire l'article
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -126,29 +134,9 @@
       <!-- Grille secondaire -->
       <div class="articles-grid">
         <article class="article-card reveal" data-delay="0">
-          <a href="article.html" class="card-img-link">
-            <div class="card-img">
-              <div class="card-img-placeholder">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.2"/><path d="M10 16 L16 10 L22 16 L16 22 Z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
-              </div>
-            </div>
-          </a>
-          <div class="card-body">
-            <div class="article-meta">
-              <span class="tag tag--analyse">Analyse</span>
-              <span class="meta-date">8 jan. 2025</span>
-            </div>
-            <h3 class="card-title"><a href="article.html">Le pivot, un poste en pleine mutation dans le handball moderne</a></h3>
-            <p class="card-excerpt">Comment le jeu en pivot s'est transformé ces dix dernières années en Starligue.</p>
-            <a href="article.html" class="card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-        </article>
-
-        <article class="article-card reveal" data-delay="1">
           <a href="sacha-durasnel-portrait.html" class="card-img-link">
             <div class="card-img">
-              <img src="assets/images/Sacha-Durasnel-CCMHB.avif" alt="Sacha Durasnel-1">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.2"/><path d="M10 16 L16 10 L22 16 L16 22 Z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+              <img src="assets/images/Sacha-Durasnel-CCMHB.avif" alt="Sacha Durasnel">
             </div>
           </a>
           <div class="card-body">
@@ -158,17 +146,16 @@
             </div>
             <h3 class="card-title"><a href="sacha-durasnel-portrait.html">Concilier ambitions, projet sportif et études supérieures :
               le casse-tête de Sacha Durasnel</a></h3>
-            <p class="card-excerpt">Arrivé de Montpellier à l’été 2025, Sacha Durasnel, 19 ans, rêve de devenir handballeur professionnel. 
-              Une ambition qui le suit depuis tout petit, qu’il va devoir concilier, en parallèle, avec un cursus scolaire exigeant.</p>
+            <p class="card-excerpt">Arrivé de Montpellier à l'été 2025, Sacha Durasnel, 19 ans, rêve de devenir handballeur professionnel. 
+              Une ambition qui le suit depuis tout petit, qu'il va devoir concilier, en parallèle, avec un cursus scolaire exigeant.</p>
             <a href="sacha-durasnel-portrait.html" class="card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </article>
 
-        <article class="article-card reveal" data-delay="2">
+        <article class="article-card reveal" data-delay="1">
           <a href="delphine-royer-portrait.html" class="card-img-link">
             <div class="card-img">
               <img src="assets/images/Delphine-Royer-RespoCF.jpg.avif" alt="Delphine Royer">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.2"/><path d="M10 16 L16 10 L22 16 L16 22 Z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
             </div>
           </a>
           <div class="card-body">
@@ -183,22 +170,20 @@
           </div>
         </article>
 
-        <article class="article-card reveal" data-delay="3">
-          <a href="article.html" class="card-img-link">
+        <article class="article-card reveal" data-delay="2">
+          <a href="sacha-durasnel-equipe-france.html" class="card-img-link">
             <div class="card-img">
-              <div class="card-img-placeholder">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.2"/><path d="M10 16 L16 10 L22 16 L16 22 Z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
-              </div>
+              <img src="assets/images/Sacha-Durasnel-EDF.jpeg" alt="Sacha Durasnel">
             </div>
           </a>
           <div class="card-body">
             <div class="article-meta">
               <span class="tag tag--portrait">Portrait</span>
-              <span class="meta-date">12 déc. 2024</span>
+              <span class="meta-date">02 avr. 2026</span>
             </div>
-            <h3 class="card-title"><a href="article.html">Cleopatre Darleux, la gardienne qui n'en finit pas de briller</a></h3>
-            <p class="card-excerpt">À 34 ans, elle reste l'une des meilleures gardiennes d'Europe. Rencontre.</p>
-            <a href="article.html" class="card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <h3 class="card-title"><a href="sacha-durasnel-equipe-france.html">« Ça fout les frissons » : les premiers pas en Bleu de Sacha Durasnel</a></h3>
+            <p class="card-excerpt">Jeudi 19 mars 2026, Sacha Durasnel a honoré sa première sélection en Equipe de France U21, lors du Tiby 2026, tournoi de handball entre quatre nations de jeunes joueurs prometteurs.</p>
+            <a href="sacha-durasnel-equipe-france.html" class="card-link">Lire <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </article>
       </div>
@@ -213,10 +198,15 @@
         <h2>Ne manquez aucun article.</h2>
         <p>La sélection de Théo, directement dans votre boîte mail.</p>
       </div>
-      <form class="nl-form" onsubmit="handleNlSubmit(event)">
-        <input type="email" placeholder="votre@email.com" required />
-        <button type="submit">S'abonner</button>
-      </form>
+      <div>
+        <form class="nl-form">
+          <input type="email" placeholder="votre@email.com" required />
+          <button type="submit">S'abonner</button>
+        </form>
+        <div class="social-proof">
+          <p>Rejoignez les <strong>premiers lecteurs</strong> — du contenu exclusif tous les mois</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -227,16 +217,19 @@
         <span class="logo-hand">HAND'</span><span class="logo-theo">Coulisses</span>
       </div>
       <nav class="footer-nav">
-        <a href="#">Accueil</a>
-        <a href="#">À propos</a>
+        <a href="index.html">Accueil</a>
+        <a href="portraits.html">Portraits</a>
+        <a href="eclairages.html">Éclairages</a>
+        <a href="interviews.html">Interviews</a>
         <a href="contact.html">Contact</a>
-        <a href="#">Mentions légales</a>
       </nav>
+      <a href="contact.html" class="footer-cta">S'abonner</a>
       <p class="footer-copy">© Théo Alleaume — Tous droits réservés</p>
     </div>
   </footer>
 
-  <!-- CONTEXTE PAGE -->
+  <script src="assets/js/main.js"></script>
+
   <script>
     dataLayer.push({
       page_type: "home",
@@ -244,59 +237,5 @@
     });
   </script>
 
-  <script>
-    // ── Header sticky ──
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 60);
-    });
-
-    // ── Reveal on scroll ──
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const delay = entry.target.dataset.delay || 0;
-          setTimeout(() => entry.target.classList.add('visible'), delay * 100);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
-
-    // ── Slider ──
-    const track = document.getElementById('sliderTrack');
-    const cards = track.querySelectorAll('.slider-card');
-    let currentSlide = 0;
-    const cardWidth = () => cards[0].offsetWidth + 24;
-
-    document.getElementById('sliderNext').addEventListener('click', () => {
-      if (currentSlide < cards.length - 1) {
-        currentSlide++;
-        track.style.transform = `translateX(-${currentSlide * cardWidth()}px)`;
-      }
-    });
-    document.getElementById('sliderPrev').addEventListener('click', () => {
-      if (currentSlide > 0) {
-        currentSlide--;
-        track.style.transform = `translateX(-${currentSlide * cardWidth()}px)`;
-      }
-    });
-
-    // ── Newsletter ──
-    function handleNlSubmit(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('button');
-      btn.textContent = 'Merci !';
-      btn.style.background = '#2a7a5a';
-      dataLayer.push({ event: 'newsletter_inscription', page_type: 'home' });
-    }
-
-    // ── Hero scroll ──
-    document.querySelector('.hero-scroll').addEventListener('click', (e) => {
-      e.preventDefault();
-      document.getElementById('articles').scrollIntoView({ behavior: 'smooth' });
-    });
-  </script>
 </body>
 </html>
