@@ -362,6 +362,7 @@ img { display: block; max-width: 100%; }
 ════════════════════════════════════════════ */
 .tag {
   display: inline-block;
+  align-self: flex-start;
   font-family: var(--font-display);
   font-size: 10px;
   font-weight: 700;
@@ -994,6 +995,62 @@ img { display: block; max-width: 100%; }
   color: var(--ink-light);
   font-style: normal;
 }
+
+/* ── Format interview ── */
+.interview-q {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--accent);
+  margin: 40px 0 14px;
+  padding-left: 18px;
+  border-left: 3px solid var(--ink-light);
+}
+.interview-q .interview-speaker {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.interview-a {
+  color: var(--ink);
+  padding-left: 18px;
+  border-left: 3px solid var(--border);
+  margin-bottom: 24px;
+}
+.interview-a p {
+  margin-bottom: 12px;
+}
+.interview-speaker {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--ink-light);
+  padding: 3px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+.interview-speaker--interviewee {
+  background: var(--accent);
+}
+.interview-a .interview-speaker {
+  margin-bottom: 8px;
+}
+.interview-name {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* ── Centrage des embeds Instagram ── */
+blockquote.instagram-media {
+  display: block !important;
+  margin: 28px auto !important;
+  float: none !important;
+}
+
 
 .article-factbox {
   background: var(--accent);
