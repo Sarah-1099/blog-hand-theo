@@ -1009,7 +1009,8 @@ img { display: block; max-width: 100%; }
 }
 .interview-q .interview-speaker {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-right: 8px;
+  margin-bottom: 0;
 }
 .interview-a {
   color: var(--ink);
